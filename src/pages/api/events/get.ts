@@ -1,0 +1,1 @@
+import type { NextApiRequest, NextApiResponse } from 'next'; import { getEvent } from '@/lib/db'; export default function handler(req:NextApiRequest,res:NextApiResponse){ const e=getEvent(String(req.query.slug||'')); if(!e) return res.status(404).json({error:'not found'}); res.json({ event:e }); }

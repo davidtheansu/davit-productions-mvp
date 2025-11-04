@@ -1,0 +1,1 @@
+import { useRouter } from 'next/router'; export default function Viewer(){ const { query } = useRouter(); return (<div className='container'><div className='card'><h1>Viewer – {query.slug}</h1><div className='qr' style={{width:'100%',height:280}}>Player (Mux/IVS)</div><div className='small'>~5s latency target.</div></div></div>) }

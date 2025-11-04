@@ -1,0 +1,1 @@
+import Link from 'next/link'; export default function Home(){ return (<div className='container'><div className='card'><h1>DAVIT Productions</h1><p>Phone-first multicam streaming MVP.</p><div style={{display:'flex',gap:8}}><Link className='btn primary' href='/dashboard'>Organizer Dashboard</Link><Link className='btn' href='/events'>All Events</Link></div></div></div>) }

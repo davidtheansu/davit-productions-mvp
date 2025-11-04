@@ -1,0 +1,1 @@
+import type { NextApiRequest, NextApiResponse } from 'next'; import { allEvents } from '@/lib/db'; export default function handler(req:NextApiRequest,res:NextApiResponse){ res.json({ events: allEvents() }); }
